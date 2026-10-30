@@ -2,8 +2,26 @@
   "curso": "Introducción a Python",
   "alumnos": [
     {
-      "id": "CAT-001",
-      "nombre": "Carlos Torres",
+      "id": "JUT-001",
+      "nombre": "Juan Antonio Torres",
+      "estado": "Completado",
+      "fecha": "2026-10-30"
+    },
+    {
+      "id": "SALV-002",
+      "nombre": "Salvador Hernández Celis",
+      "estado": "Completado",
+      "fecha": "2026-10-30"
+    },
+    {
+      "id": "EST-003",
+      "nombre": "Esteban Elihú Torres Martínez",
+      "estado": "Completado",
+      "fecha": "2026-10-30"
+    },
+    {
+      "id": "CARL-004",
+      "nombre": "Carlos Antonio",
       "estado": "Completado",
       "fecha": "2026-10-30"
     }
