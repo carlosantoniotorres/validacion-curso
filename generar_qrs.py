@@ -2,7 +2,7 @@ import json
 import qrcode
 
 # Tu URL base oficial en GitHub Pages
-BASE_URL = "https://carlsantoniotorres.github.io/validacion-curso/"
+BASE_URL = "https://carlosantoniotorres.github.io/validacion-curso/".lower()
 
 # Cargar los datos desde alumnos.json
 try:
