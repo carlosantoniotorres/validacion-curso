@@ -24,6 +24,42 @@
       "nombre": "Carlos Antonio",
       "estado": "Completado",
       "fecha": "2026-10-30"
+    },
+    {
+      "id": "DIN-005",
+      "nombre": "Diana Itzel Escobar Olivares",
+      "estado": "Completado",
+      "fecha": "2026-10-30"
+    },
+    {
+      "id": "DIN-006",
+      "nombre": "Clara Jazmin Cruz Morales",
+      "estado": "Completado",
+      "fecha": "2026-10-30"
+    },
+    {
+      "id": "DIN-007",
+      "nombre": "Tania Yadira Huerta Rivera",
+      "estado": "Completado",
+      "fecha": "2026-10-30"
+    },
+    {
+      "id": "DIN-008",
+      "nombre": "Diego Ramses Lopez De La O",
+      "estado": "Completado",
+      "fecha": "2026-10-30"
+    },
+    {
+      "id": "DIN-009",
+      "nombre": "Jorge Enrique Ortega Pacheco",
+      "estado": "Completado",
+      "fecha": "2026-10-30"
+    },
+    {
+      "id": "DIN-010",
+      "nombre": "Kelly Dayana Tellez Monroy",
+      "estado": "Completado",
+      "fecha": "2026-10-30"
     }
   ]
 }
