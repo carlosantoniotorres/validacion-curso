@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de Constancia</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f9; text-align: center; padding: 50px; }
+        .card { background: white; max-width: 400px; margin: 0 auto; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .valido { color: #2e7d32; font-size: 20px; font-weight: bold; }
+        .invalido { color: #c62828; font-size: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>Verificación de Constancia</h2>
+        <div id="resultado">Cargando datos...</div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const alumnoId = urlParams.get('id');
+        const contenedor = document.getElementById('resultado');
+
+        if (!alumnoId) {
+            contenedor.innerHTML = "<p class='invalido'>❌ No se indicó un ID de constancia.</p>";
+        } else {
+            fetch('alumnos.json')
+                .then(response => response.json())
+                .then(data => {
+                    const alumno = data.alumnos.find(a => a.id === alumnoId);
+                    if (alumno) {
+                        contenedor.innerHTML = `
+                            <p class='valido'>¡Constancia Válida! ✅</p>
+                            <p><strong>Alumno:</strong> ${alumno.nombre}</p>
+                            <p><strong>Curso:</strong> ${data.curso}</p>
+                            <p><strong>Estado:</strong> ${alumno.estado}</p>
+                            <p><strong>Fecha:</strong> ${alumno.fecha}</p>
+                        `;
+                    } else {
+                        contenedor.innerHTML = "<p class='invalido'>❌ Constancia no encontrada o inválida.</p>";
+                    }
+                })
+                .catch(() => {
+                    contenedor.innerHTML = "<p class='invalido'>Error al verificar la constancia.</p>";
+                });
+        }
+    </script>
+</body>
+</html>

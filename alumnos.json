@@ -1,0 +1,11 @@
+{
+  "curso": "Introducción a Python",
+  "alumnos": [
+    {
+      "id": "CAT-001",
+      "nombre": "Carlos Torres",
+      "estado": "Completado",
+      "fecha": "2026-10-30"
+    }
+  ]
+}
